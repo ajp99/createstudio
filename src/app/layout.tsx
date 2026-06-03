@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Syne } from "next/font/google";
 import "./globals.css";
-import LenisProvider from "@/components/LenisProvider";
+import Providers from "@/components/Providers";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -17,7 +17,8 @@ const syne = Syne({
 
 export const metadata: Metadata = {
   title: "CREATE STUDIO | Premium Architectural Design Studio",
-  description: "An immersive, Awwwards-level creative portfolio showcasing advanced design paradigms, typography, and interactive spatial engineering.",
+  description:
+    "An immersive, Awwwards-level creative portfolio showcasing advanced design paradigms, typography, and interactive spatial engineering.",
 };
 
 export default function RootLayout({
@@ -30,8 +31,8 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${syne.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full bg-background text-foreground selection:bg-foreground selection:text-background overflow-x-hidden">
-        <LenisProvider>{children}</LenisProvider>
+      <body className="min-h-full bg-background text-foreground overflow-x-hidden cursor-none">
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

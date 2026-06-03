@@ -22,7 +22,12 @@ body {
   overflow-x: hidden;
 }
 
-/* Lenis Smooth Scroll Configuration */
+/* Hide native cursor globally — custom cursor replaces it */
+*, *::before, *::after {
+  cursor: none !important;
+}
+
+/* Lenis Smooth Scroll */
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -43,29 +48,38 @@ html.lenis, html.lenis body {
   pointer-events: none;
 }
 
-/* Hide scrollbar during pre-load pinning if needed, but standard is fine */
-.no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}
-
 /* Custom Premium Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
 }
 ::-webkit-scrollbar-track {
   background: #0a0a0a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #262626;
+  background: #1c1c1c;
   border-radius: 100px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #404040;
+  background: #333;
 }
 
 /* Custom Text Selection */
 ::selection {
   background: #f4f4f4;
   color: #0a0a0a;
+}
+
+/* Perspective for 3D text transforms */
+.perspective-hero {
+  perspective: 800px;
+}
+
+/* Gallery clip-path animation baseline */
+.gallery-item img {
+  will-change: clip-path, transform;
+}
+
+/* Noise overlay blend */
+canvas[aria-hidden] {
+  pointer-events: none;
 }

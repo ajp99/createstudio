@@ -1,22 +1,44 @@
 "use client";
 
-import { ReactLenis } from "lenis/react";
-import { ReactNode } from "react";
+import { ReactLenis, useLenis } from "lenis/react";
+import { ReactNode, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-interface LenisProviderProps {
-  children: ReactNode;
+gsap.registerPlugin(ScrollTrigger);
+
+function GSAPBridge() {
+  const lenis = useLenis(({ scroll }) => {
+    ScrollTrigger.update();
+  });
+
+  useEffect(() => {
+    if (!lenis) return;
+    ScrollTrigger.scrollerProxy(document.body, {
+      scrollTop: () => lenis.scroll,
+      getBoundingClientRect: () => ({
+        top: 0,
+        left: 0,
+        width: window.innerWidth,
+        height: window.innerHeight,
+      }),
+    });
+  }, [lenis]);
+
+  return null;
 }
 
-export default function LenisProvider({ children }: LenisProviderProps) {
+export default function LenisProvider({ children }: { children: ReactNode }) {
   return (
     <ReactLenis
       root
       options={{
-        lerp: 0.08,        // Inertia factor (lower is smoother and slower)
-        duration: 1.2,     // Scroll duration
-        smoothWheel: true, // Smooth mouse wheel scrolling
+        lerp: 0.1,
+        smoothWheel: true,
+        duration: 1.2,
       }}
     >
+      <GSAPBridge />
       {children}
     </ReactLenis>
   );
