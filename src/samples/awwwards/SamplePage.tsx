@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function AwwwardsSample() {
   const heroRef = useRef<HTMLElement>(null);
-  const orbRef = useRef<HTMLElement>(null);
+  const orbRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 

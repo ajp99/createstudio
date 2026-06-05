@@ -20,7 +20,7 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: 'easeOut' },
+    transition: { duration: 0.8 },
   },
 };
 
@@ -110,10 +110,10 @@ export default function GlassmorphismSample() {
                   Ready to Transform Your Ideas?
                 </h2>
                 <p className="text-slate-600 mb-8">
-                  Start building beautiful experiences today with our modern design system.
+                  Start building beautiful experiences today with create studio's modern design system.
                 </p>
                 <button className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:shadow-lg transition-shadow">
-                  Start Free Trial
+                  CTA
                 </button>
               </motion.div>
             </div>
@@ -122,7 +122,7 @@ export default function GlassmorphismSample() {
           {/* Footer */}
           <footer className="py-12 px-6 border-t border-white/10 bg-white/5 backdrop-blur">
             <div className="max-w-6xl mx-auto text-center text-slate-600">
-              <p>&copy; 2024 Glassmorphism Design. All rights reserved.</p>
+              <p>&copy; FOOTER : 2024 Glassmorphism Design. All rights reserved.</p>
             </div>
           </footer>
         </main>
