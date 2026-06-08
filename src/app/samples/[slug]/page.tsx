@@ -3,6 +3,7 @@ import { samplesRegistry } from '@/lib/samplesRegistry';
 import { notFound } from 'next/navigation';
 
 const sampleComponents: Record<string, React.ComponentType> = {
+  'matrix-ai': dynamic(() => import('@/samples/matrix-ai/SamplePage')),
   'create-studio': dynamic(() => import('@/samples/create-studio/SamplePage')),
   'glassmorphism': dynamic(() => import('@/samples/glassmorphism/SamplePage')),
   'scroll-story': dynamic(() => import('@/samples/scroll-story/SamplePage')),

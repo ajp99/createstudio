@@ -16,6 +16,17 @@ export interface SampleMeta {
 
 export const samplesRegistry: SampleMeta[] = [
   {
+    slug: 'matrix-ai',
+    title: 'Matrix AI Tunnel',
+    description: 'First-person 3D tunnel plunge with depth-interleaved snapping cards and era mutations.',
+    thumbnail: '/thumbnails/create-studio.jpg',
+    theme: 'dark',
+    style: 'immersive',
+    animationStyle: 'physics',
+    tags: ['3d', 'tunnel', 'webgl', 'gsap', 'interactive'],
+    featured: true,
+  },
+  {
     slug: 'create-studio',
     title: 'Create Studio',
     description: 'Immersive dark creative agency with WebGL particles and GSAP scroll reveals.',

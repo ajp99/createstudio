@@ -54,7 +54,7 @@ export default function CustomCursor() {
     <>
       <div
         ref={ringRef}
-        className="fixed top-0 left-0 w-10 h-10 border border-white/60 rounded-full pointer-events-none z-[9999] mix-blend-difference flex items-center justify-center"
+        className="fixed top-0 left-0 w-10 h-10 border-2 border-white rounded-full pointer-events-none z-[9999] flex items-center justify-center"
         style={{ willChange: "transform" }}
       >
         <span
@@ -64,7 +64,7 @@ export default function CustomCursor() {
       </div>
       <div
         ref={dotRef}
-        className="fixed top-0 left-0 w-1.5 h-1.5 bg-white rounded-full pointer-events-none z-[9999] mix-blend-difference"
+        className="fixed top-0 left-0 w-2 h-2 bg-white rounded-full pointer-events-none z-[9999]"
         style={{ willChange: "transform" }}
       />
     </>
