@@ -16,6 +16,17 @@ export interface SampleMeta {
 
 export const samplesRegistry: SampleMeta[] = [
   {
+    slug: 'cinematic3dzoom',
+    title: 'Cinematic 3D Zoom',
+    description: 'Scroll-driven cinematic journey through a glowing alien desert — rings, portal, terrain, and brand reveal.',
+    thumbnail: '/thumbnails/cinematic3dzoom.jpg',
+    theme: 'dark',
+    style: 'immersive',
+    animationStyle: 'scroll-triggered',
+    tags: ['3d', 'webgl', 'gsap', 'cinematic', 'r3f'],
+    featured: true,
+  },
+  {
     slug: 'matrix-ai',
     title: 'Matrix AI Tunnel',
     description: 'First-person 3D tunnel plunge with depth-interleaved snapping cards and era mutations.',
