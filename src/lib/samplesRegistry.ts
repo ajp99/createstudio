@@ -69,6 +69,17 @@ export const samplesRegistry: SampleMeta[] = [
     tags: ['dark', 'editorial', 'gsap', 'parallax'],
   },
   {
+    slug: 'visual-immersion',
+    title: 'Visual Immersion GSAP',
+    description: 'Scroll-driven aerial frame sequence — 117 frames rendered frame-perfect to canvas at 60 FPS.',
+    thumbnail: '/thumbnails/create-studio.jpg',
+    theme: 'dark',
+    style: 'immersive',
+    animationStyle: 'scroll-triggered',
+    tags: ['canvas', 'scroll', 'cinematic', 'gsap', 'sequence'],
+    featured: true,
+  },
+  {
     slug: 'awwwards',
     title: 'Awwwards Hero',
     description: 'Bold type, cursor-following orb, scroll-triggered glitch, and 3D skew.',

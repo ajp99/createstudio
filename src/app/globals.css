@@ -32,7 +32,7 @@ body {
 
 /* Hide native cursor globally — custom cursor replaces it */
 *, *::before, *::after {
-  cursor: none !important;
+  /* cursor: none !important; */
 }
 
 /* Lenis Smooth Scroll */
