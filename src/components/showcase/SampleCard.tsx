@@ -15,6 +15,7 @@ export default function SampleCard({ meta }: Props) {
             src={meta.thumbnail}
             alt={meta.title}
             fill
+            loading="eager"
             className="object-cover"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />

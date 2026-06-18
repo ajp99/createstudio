@@ -25,10 +25,10 @@ export default function GalleryPage() {
           </p>
         </div>
 
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <h2 className="text-sm font-bold text-white/60 mb-4 uppercase tracking-widest">Filter by tags</h2>
           <FilterBar activeFilters={filters} onChange={setFilters} />
-        </div>
+        </div> */}
 
         {visible.length === 0 ? (
           <div className="text-center py-16">
