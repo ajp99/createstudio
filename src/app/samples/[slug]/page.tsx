@@ -8,6 +8,7 @@ const sampleComponents: Record<string, React.ComponentType> = {
   'glassmorphism': dynamic(() => import('@/samples/glassmorphism/SamplePage')),
   'scroll-story': dynamic(() => import('@/samples/scroll-story/SamplePage')),
   'visual-immersion': dynamic(() => import('@/samples/visual-immersion/SamplePage')),
+  'edge-create': dynamic(() => import('@/samples/edge-create/SamplePage')),
 };
 
 export function generateStaticParams() {

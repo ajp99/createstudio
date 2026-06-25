@@ -68,4 +68,15 @@ export const samplesRegistry: SampleMeta[] = [
     tags: ['canvas', 'scroll', 'cinematic', 'gsap', 'sequence'],
     featured: true,
   },
+  {
+    slug: 'edge-create',
+    title: 'Edge Immersive Hero',
+    description: 'Scroll-driven aerial frame sequence — 240 frames rendered frame-perfect to canvas at 30 FPS.',
+    thumbnail: '/thumbnails/create-studio-4.webp',
+    theme: 'dark',
+    style: 'immersive',
+    animationStyle: 'scroll-triggered',
+    tags: ['canvas', 'scroll', 'cinematic', 'gsap', 'sequence'],
+    featured: true,
+  },
 ];
