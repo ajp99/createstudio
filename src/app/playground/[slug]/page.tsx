@@ -15,6 +15,7 @@ const playgroundComponents: Record<string, React.ComponentType> = {
   'navbar': dynamic(() => import('@/playground/navbar/Component')),
   'colorful-navbar': dynamic(() => import('@/playground/colorful-navbar/Component')),
   'overlay-navbar': dynamic(() => import('@/playground/overlay-navbar/Component')),
+  'fullscreen-overlay-menu-item-animations': dynamic(() => import('@/playground/fullscreen-overlay-menu-item-animations/Component')),
   'command-palette': dynamic(() => import('@/playground/command-palette/Component')),
   'scroll-text-reveal': dynamic(() => import('@/playground/scroll-text-reveal/Component')),
   'scroll-counter': dynamic(() => import('@/playground/scroll-counter/Component')),
