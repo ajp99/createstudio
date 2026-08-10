@@ -232,6 +232,15 @@ export const samplesRegistry: SampleMeta[] = [
     category: 'navbar',
     tags: ['ui', 'navbar', 'overlay', 'animated', 'fullscreen', 'sections', 'scroll'],
   },
+  {
+    slug: 'preloader',
+    title: 'Preloader Collection',
+    description: '40 reusable preloader variants (spinners, dots, bars, morph) with customizable size, color, and speed.',
+    thumbnail: '/thumbnails/preloader.jpg',
+    type: 'component',
+    category: 'loader',
+    tags: ['ui', 'preloader', 'loader', 'spinner', 'animation', 'reusable'],
+  },
   // Animated Components (10)
   {
     slug: 'scroll-text-reveal',
